@@ -237,7 +237,7 @@
 
     .ncontenedor {
         width: 80vw;
-        height: 45vh;
+        height: 55vh;
         margin-top: 5rem;
         background: rgba(255, 255, 255, 0.5);
         box-shadow: 0 0 10px rgba(0, 0, 0, .3);
@@ -245,7 +245,7 @@
 
 
     #novedades {
-        height: 180vh;
+        height: 220vh;
         background-color: rgba(255, 255, 255, 0.856);
         ;
         background-image: none;
