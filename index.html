@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Trabajo UY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,300;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="img/logo-p.png">
+    <link rel="stylesheet" href="css/estilos_p1.css">
+    <link rel="stylesheet" href="css/media_p1.css">
+    <meta charset="utf-8">
+    <meta name="author" content="Claudia Coppola">
+    <meta name="description" content="Estructura HTML5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Script de efecto para desplegar opciones -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        //////////////////// Desplegar opciones cuando nos posicionamos sobre el menú de barras //////////////////////
+        $(document).ready(function () {
+            $(".op-barras").click(function () {
+                $(".menu-adaptable").slideToggle("slow");
+            });
+        });
+        ////////////////////////////// Ocultar menú cuando hacemos clic en las opciones ////////////////////////////////
+        $(document).ready(function () {
+            $(".op-menu-oculto").click(function () {
+                $(".menu-adaptable").slideToggle("slow");
+            });
+        });
+        //////////////////// Ocultar menú cuando abrimos la página en tamaño inferior a 600 píxeles //////////////////////
+        $(document).ready(function () {
+            $('.menu-adaptable').hide();
+        });
+    </script>
+    <!-- Script para efecto scroll al seleccionar una opción del menú -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"
+        charset="utf-8"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="div-nav-1">
+            <img src="/img/logo.png" height="100px" alt="logo">
+            <h1>BuscoEmpleo.UY</h1>
+        </div>
+        <div class="div-nav-2">
+            <ul>
+                <li class="op-menu"><a id="clic1" href="#home">Inicio</a></li>
+                <li class="op-menu"><a href="#llamados">Llamados</a></li>
+                <li class="op-menu"><a href="#registrarse">Registrarse</a></li>
+                <li class="op-menu"><a href="#novedades">Novdedades</a></li>
+                <li class="op-menu"><a href="#registrarse" class="Padding20">Contacto</a></li>
+                <li class="op-barras"><a href="#barras">☰</a></li>
+            </ul>
+        </div>
+        <div class="menu-adaptable">
+            <ul class="menu-oculto">
+                <li class="menu-hover"><a class="op-menu-oculto" href="#home">Inicio</a></li>
+                <li class="menu-hover"><a class="op-menu-oculto" href="#llamados">Llamados</a></li>
+                <li class="menu-hover"><a class="op-menu-oculto" href="#registrarse">Registrarse</a></li>
+                <li class="menu-hover"><a class="op-menu-oculto" href="#novedades">Novdedades</a></li>
+                <li class="menu-hover"><a class="op-menu-oculto" href="#registrarse" class="Padding20">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header id="home">
+        <article class="izq-header" id="subir">
+            <div class="texto">
+                <h2>Oportunidades que se<br>adaptan a tu vocacion</h2>
+                <br>
+                <p class="container">
+                    Ofertas de trabajo inclusivas y colaborativas,<br>
+                    Oportunidades de desarrollo profesional y un <br>
+                    ambiente para crecer y prosperar.<br>
+                </p>
+            </div>
+            <div class="enlaces">
+                <a class="boton" href="#llamados">Comenzar ahora!</a>
+            </div>
+        </article>
+        <article class="der-header">
+            <img src="img/pc.png" width="550" height="550" alt="imagen" </article>
+    </header>
+
+
+    <section id="llamados">
+        <div class="textollamado">
+            <h2 class="b">Llamados</h2>
+            <p class="b">
+                en esta seccion podras ver los llamados mas recientes a inscribirte a cada uno de ellos. dejando tus
+                datos, para que luego puedan contactar contigo y asi programar una entrevista
+            </p>
+        </div>
+        <div class="ofertas">
+            <div class="container1">
+                <img src="/img/mvotma.png" width="80" height="60" alt="">
+                <p class="empresa">MVOT</p>
+                <div class="texto-oferta">
+                    <p class="D-empresa">Arquitecto/a o Licenciado/a en Geografia.</p>
+                    <p class="P-empresa">Perdiodo de Postulacion: <br> 12/10/2023 - 07/11/2023</p>
+                    <a class="boton"
+                        href="https://www.uruguayconcursa.gub.uy/Portal/servlet/com.si.recsel.verllamado?30555">Postularse!</a>
+                </div>
+            </div>
+            <div class="container2">
+                <img src="/img/mgap.png" width="80" height="60" alt="">
+                <p class="empresa">MGAP</p>
+                <div class="texto-oferta">
+                    <p class="D-empresa">Licenciado/a en Psicologia Contrato de Funcion Publica</p>
+                    <p class="P-empresa">Perdiodo de Postulacion: <br> 12/10/2023 - 07/11/2023</p>
+                    <a class="boton" href="https://www.uruguayconcursa.gub.uy/Portal/servlet/com.si.recsel.verllamado?
+                    25787">Postularse!</a>
+                </div>
+            </div>
+            <div class="container3">
+                <img src="/img/mides.png" width="80" height="60" alt="">
+                <p class="empresa">MIDES</p>
+                <div class="texto-oferta">
+                    <p class="D-empresa">Ingeniero/a Agronomo/a para Contrato de Provisoriato</p>
+                    <p class="P-empresa">Perdiodo de Postulacion: <br> 12/10/2023 - 07/11/2023</p>
+                    <a class="boton" href="https://www.uruguayconcursa.gub.uy/Portal/servlet/com.si.recsel.verllamado?
+                    30481">Postularse!</a>
+                </div>
+            </div>
+            <div class="container4">
+                <img src="/img/mtss.png" width="80" height="60" alt="">
+                <p class="empresa">MTSS</p>
+                <div class="texto-oferta">
+                    <p class="D-empresa">Gestor/a Administrativo/a Direccion General</p>
+                    <p class="P-empresa">Perdiodo de Postulacion: <br> 12/10/2023 - 07/11/2023</p>
+                    <a class="boton" href="https://www.uruguayconcursa.gub.uy/Portal/servlet/com.si.recsel.verllamado?
+                    30503">Postularse!</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <section id="registrarse" class="registrarse">
+
+
+
+        <div class="registration-form">
+            <h2>Registrarse</h2>
+            <form action="" method="post">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+
+                <input type="submit" value="Registrarse">
+            </form>
+        </div>
+
+        <div class="contacto">
+            <img src="img/loca.png" width="50" alt="">
+            <h4>Localizacion:</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur</p>
+            <img src="img/email.png" width="50" alt="">
+            <h4>Email:</h4>
+            <p>Lorem@hotmail.com</p>
+            <img src="img/phone.png" width="50" alt="">
+            <h4>Telefono:</h4>
+            <p>+123456789</p>
+        </div>
+
+    </section>
+
+    <section id="novedades">
+        <section id="ncontenedores">
+            <div class="ncontenedor" onmouseover="mostrarContenido('Lorem Ipsum .')">
+                <img src="/img/imagen1.png" alt="Imagen 1">
+                <p>Descripción del Contenedor 1.</p>
+            </div>
+            <div class="ncontenedor" onmouseover="mostrarContenido('Lorem Ipsum .')">
+                <img src="/img/imagen2.png" alt="Imagen 2">
+                <p>Descripción del Contenedor 2.</p>
+            </div>
+            <div class="ncontenedor" onmouseover="mostrarContenido('Lorem Ipsum .')">
+                <img src="/img/imagen3.png" alt="Imagen 3">
+                <p>Descripción del Contenedor 3.</p>
+            </div>
+        </section>
+        <div id="ncontenido-mostrado"></div>
+    </section>
+
+
+
+    <script>
+
+
+        /////////////////////////// Parte del efecto scroll /////////////////////////////////////
+        $(function () {
+            $('a[href*=#]').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                    && location.hostname == this.hostname) {
+                    var $target = $(this.hash);
+                    $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+                    if ($target.length) {
+                        var targetOffset = $target.offset().top;
+                        $('html,body').animate({ scrollTop: targetOffset }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
