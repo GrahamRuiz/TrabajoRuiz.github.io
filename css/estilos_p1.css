@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color:rgba(56,80,126,255);
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+nav {
+    background-color: rgb(56, 80, 126);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index:2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-size: 100vw 100vh;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#llamados{
+    background-color: rgba(255, 255, 255, 0.856);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    
+}
+
+#contact,
+#login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: 100vw 100vh;
+}
+
+
+#novedades {
+    position: relative;
+    background: url(/img/coworking.jpg) no-repeat center;
+    background-size: 100vw 100vh;
+}
+
+#novedades::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+article {
+    width: 50vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+
+.div-nav-1 {
+    width: 10vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10.6rem;
+
+}
+
+.div-nav-2 {
+    width: 90vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 10rem;
+}
+
+ul,
+li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+
+li:hover {
+    border-radius: 3rem;
+    padding: .3rem!important;
+    border: solid 2px #00e4e5;
+    color: white;
+}
+
+h2 {
+    font-size: 3.6em;
+    color: #f1f1f1;
+    text-align: start;
+}
+
+h1{
+    font-size: 3em;
+    color: #f1f1f1;
+    text-align: center;
+}
+
+p {
+    color: #cccccc;
+    font-size: 1.8em;
+    line-height: 1.2em;
+
+}
+
+.container{
+    text-align: start;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.izq-header {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.der-header {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlaces {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+
+.boton {
+    margin: 10px;
+    padding: 4px;
+    background: rgba(6, 159, 230, 0.932);
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    height: 2.3rem;
+    width: 10rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 1s;
+    color: white
+}
+
+.boton:hover {
+    background: rgba(0, 76, 255, 0.9);
+}
+
+.Padding20 {
+    padding-right: 20px;
+}
+
+.bot-inf {
+    display: none;
+}
+
+.op-barras {
+    display: none;
+}
+
+.menu-adaptable {
+    display: none;
+    flex-direction: column;
+}
+
+.textollamado{
+    height: 35vh;
+
+}
+.textollamado p{
+    padding: 1rem 3rem;
+    text-align: center;
+    color: #363636;
+    font-size: 1.7rem;
+}
+
+.textollamado h2{
+    padding-top: 10rem;
+    text-align: center;
+    color: rgba(56,80,126,255);
+    font-size: 3rem;
+}
+
+.ofertas{
+    height: 65vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ofertas img{
+    margin-top: 2rem;
+}
+
+.empresa{
+    font-weight: bold;
+    color: #363636;
+}
+
+.D-empresa {
+    margin: 1rem;
+    padding-top: 1rem;
+    color: #363636; 
+    font-size: 1.4rem;
+    height: 6vh;
+}
+
+.P-empresa {
+    margin: 1rem;
+    padding: 1rem 0rem;
+    color: #363636; 
+    font-size: 1rem;
+    margin-bottom: 5rem;
+}
+
+.container1, .container2, .container3, .container4{
+    width: 20vw;
+    height: 40vh;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+
+.registrarse{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 40vw;
+    height: 60vh;
+    margin-right: 20px;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.registration-form h2 {
+    padding-bottom: 3rem;
+    text-align: center;
+    color: #363636;
+}
+
+.registration-form label {
+    margin: 2rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.registration-form input {
+
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border-radius: .8rem;
+    border: none;
+    
+}
+
+
+
+.registration-form input[type="submit"] {
+    margin-top: 3rem;
+    background-color: rgba(6, 159, 230, 0.932);
+    color: #fff;
+    cursor: pointer;
+}
+
+.registration-form input[type="submit"]:hover {
+    background-color: rgba(0, 76, 255, 0.9);
+
+}
+
+.contacto{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+
+}
+
+.contacto p{
+font-size: 2.5rem;
+}
+
+#ncontenedores {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ncontenedor {
+    position: relative;
+    width: 20vw;
+    height: 40vh;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.ncontenedor p {
+    padding-top: 3rem;
+}
+
+.ncontenedor:hover {
+    transform: scale(1.1);
+}
+
+#ncontenido-mostrado {
+    margin-top: 20px;
+    text-align: center;
+}
